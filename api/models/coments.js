@@ -8,7 +8,7 @@ const commentSchema = mongoose.Schema({
     lastName: {type: String, require: true},
     contact: {type: Number, require: true},
     comment: {type: String, require: true},
-    date:{type: String ,default: moment().format('MMMM Do YYYY') },
+    date:{type: String ,default: moment().format() },
     emotion: {type: String, require : true},
     rating: {type: Number, require: true},
 
